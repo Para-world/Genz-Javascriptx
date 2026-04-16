@@ -1,10 +1,7 @@
-// ============================================
-// Numbers aur Math in Modern JavaScript (ES2024+)
-// ============================================
 
-// -----------------------------------------
+
 // Number Basics
-// -----------------------------------------
+
 
 const score = 400;
 console.log("score:", score);
@@ -17,19 +14,19 @@ console.log("toFixed(2):", balance.toFixed(2));             // "100.00"
 const otherNumber = 123.8966;
 console.log("toPrecision(4):", otherNumber.toPrecision(4)); // "123.9"
 
-// -----------------------------------------
+
 // Numeric Separators (ES2021) — bade numbers padne me easy
-// -----------------------------------------
+
 
 const hundreds = 1_000_000; // 1000000 jaisa hi hai, bas readable hai!
 console.log("Formatted:", hundreds.toLocaleString("en-IN")); // "10,00,000"
 console.log("US format:", hundreds.toLocaleString("en-US")); // "1,000,000"
 
-// -----------------------------------------
-// Modern Number Methods (ES2015+)
-// -----------------------------------------
 
-console.log("\n--- Number static methods ---");
+// Modern Number Methods (ES2015+)
+
+
+
 console.log("Number.isInteger(42):", Number.isInteger(42));       // true
 console.log("Number.isInteger(42.5):", Number.isInteger(42.5));   // false
 console.log("Number.isFinite(1/0):", Number.isFinite(1 / 0));     // false

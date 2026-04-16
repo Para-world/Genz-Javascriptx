@@ -7,11 +7,10 @@ const accountId = 144553;
 
 // 'let' — block-scoped hai, reassign ho sakta hai (jab value change ho tab use karo)
 let accountEmail = "DEEPAK@google.com";
-let accountCity = "Jaipur"; // hamesha let/const se declare karo, implicit globals mat banao
+let accountCity = "Jaipur"; 
 let accountState; // default me undefined hoga
 
-// 'var' — function-scoped hai, hoisted hota hai, loops/closures me bugs deta hai
-// var accountPassword = "12345"; // AVOID — iske jagah let ya const use karo
+
 const accountPassword = "12345"; // agar change nahi hoga toh const use karo
 
 // const wali values reassign nahi hoti:
