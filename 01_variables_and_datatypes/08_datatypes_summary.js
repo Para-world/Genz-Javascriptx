@@ -1,10 +1,6 @@
-// ============================================
-// Data Types Summary — Modern JavaScript (ES2024+)
-// ============================================
 
-// -----------------------------------------
+
 // Primitive Types (7 types — immutable, value se store hote hain)
-// -----------------------------------------
 
 const score = 100;                    // Number
 const scoreValue = 100.3;             // Number (int aur float same type hai)
@@ -19,9 +15,7 @@ console.log("Same description, different symbols:", id === anotherId); // false
 console.log("Symbol description:", id.description); // "123" (ES2019)
 console.log("BigInt:", bigNumber);
 
-// -----------------------------------------
 // Reference Types (Non-Primitive — reference se store hote hain)
-// -----------------------------------------
 
 // Arrays
 const heroes = ["shaktiman", "naagraj", "doga"];
@@ -51,9 +45,7 @@ console.log("Set:", mySet);             // Set(4) {1, 2, 3, 4}
 console.log("Map:", myMap);             // Map(2) {"name" => "DEEPAK", 42 => "answer"}
 console.log("typeof Set:", typeof mySet); // "object"
 
-// -----------------------------------------
 // Deep Copy with structuredClone() (ES2022)
-// -----------------------------------------
 
 const original = {
     name: "DEEPAK",
@@ -72,9 +64,7 @@ console.log("\n--- structuredClone ---");
 console.log("Original nested:", original.nested.level); // 1 — change nahi hua!
 console.log("Deep copy nested:", deepCopy.nested.level); // 99
 
-// -----------------------------------------
 // typeof Results
-// -----------------------------------------
 
 console.log("\n--- typeof results ---");
 console.log("typeof '':", typeof "");              // "string"
