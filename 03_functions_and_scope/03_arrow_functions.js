@@ -1,10 +1,6 @@
-// ============================================
-// Arrow Functions in Modern JavaScript (ES2024+)
-// ============================================
 
-// -----------------------------------------
+
 // Arrow Functions aur `this` Context
-// -----------------------------------------
 
 const user = {
     username: "DEEPAK",
@@ -25,9 +21,7 @@ user.welcomeMessage(); // "sam, welcome to website"
 // Browser global scope me `this` = window object
 console.log("\nGlobal this:", this); // {} in Node.js
 
-// -----------------------------------------
 // Regular Function vs Arrow Function — `this` Behavior
-// -----------------------------------------
 
 // Regular function — `this` caller ko refer karta hai (ya global non-strict me)
 function regularFunc() {
@@ -43,9 +37,7 @@ const arrowFunc = () => {
 };
 arrowFunc();
 
-// -----------------------------------------
 // Arrow Function Syntax Variations
-// -----------------------------------------
 
 console.log("\n--- Arrow Syntax Variations ---");
 
@@ -75,9 +67,7 @@ console.log("Object:", getUser("DEEPAK"));   // { username: "DEEPAK", role: "adm
 console.log("Double:", double(5));            // 10
 console.log("Random:", getRandom());
 
-// -----------------------------------------
 // Arrays with Arrow Functions
-// -----------------------------------------
 
 console.log("\n--- Array Methods with Arrows ---");
 const myArray = [2, 5, 3, 7, 8];
