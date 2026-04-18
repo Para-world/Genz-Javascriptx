@@ -1,11 +1,7 @@
-// ============================================
-// filter, find aur findLast (ES2024+)
-// ============================================
 
-// -----------------------------------------
-// forEach values return NAHI karta
-// -----------------------------------------
 
+ // forEach values return NAHI karta
+ 
 const coding = ["js", "ruby", "java", "python", "cpp"];
 
 const values = coding.forEach((item) => {
@@ -13,10 +9,8 @@ const values = coding.forEach((item) => {
 });
 console.log("forEach return:", values); // undefined
 
-// -----------------------------------------
-// filter() — matching elements ki NAYI array return karta hai
-// -----------------------------------------
-
+ // filter() — matching elements ki NAYI array return karta hai
+ 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Implicit return (short form)
@@ -29,10 +23,8 @@ const evenNumbers = myNums.filter((num) => {
 });
 console.log("Even numbers:", evenNumbers); // [2, 4, 6, 8, 10]
 
-// -----------------------------------------
-// forEach se filter achieve karna (purana tarika)
-// -----------------------------------------
-
+ // forEach se filter achieve karna (purana tarika)
+ 
 const filteredManually = [];
 myNums.forEach((num) => {
     if (num > 4) {
@@ -41,10 +33,8 @@ myNums.forEach((num) => {
 });
 console.log("Manual filter:", filteredManually); // [5, 6, 7, 8, 9, 10]
 
-// -----------------------------------------
-// find() — PEHLA matching element return karta hai
-// -----------------------------------------
-
+ // find() — PEHLA matching element return karta hai
+ 
 console.log("\n--- find ---");
 const firstAbove5 = myNums.find((num) => num > 5);
 console.log("First > 5:", firstAbove5); // 6
@@ -52,18 +42,14 @@ console.log("First > 5:", firstAbove5); // 6
 const notFound = myNums.find((num) => num > 100);
 console.log("Not found:", notFound); // undefined
 
-// -----------------------------------------
-// findIndex() — pehle match ka INDEX return karta hai
-// -----------------------------------------
-
+ // findIndex() — pehle match ka INDEX return karta hai
+ 
 console.log("\n--- findIndex ---");
 const indexAbove5 = myNums.findIndex((num) => num > 5);
 console.log("Index of first > 5:", indexAbove5); // 5
 
-// -----------------------------------------
-// findLast() aur findLastIndex() (ES2023)
-// -----------------------------------------
-
+ // findLast() aur findLastIndex() (ES2023)
+ 
 console.log("\n--- findLast / findLastIndex (ES2023) ---");
 const lastAbove5 = myNums.findLast((num) => num > 5);
 console.log("Last > 5:", lastAbove5); // 10
@@ -71,10 +57,8 @@ console.log("Last > 5:", lastAbove5); // 10
 const lastIndexAbove5 = myNums.findLastIndex((num) => num > 5);
 console.log("Last index > 5:", lastIndexAbove5); // 9
 
-// -----------------------------------------
-// Practical Example: Objects Filter Karna
-// -----------------------------------------
-
+ // Practical Example: Objects Filter Karna
+ 
 console.log("\n--- Filter with Objects ---");
 const books = [
     { title: "Book One", genre: "Fiction", publish: 1981, edition: 2004 },

@@ -1,11 +1,6 @@
-// ============================================
-// for...of Loop aur Iterables (ES2024+)
-// ============================================
 
-// -----------------------------------------
-// for...of with Arrays
-// -----------------------------------------
-
+ // for...of with Arrays
+ 
 const arr = [1, 2, 3, 4, 5];
 
 console.log("--- Array ---");
@@ -13,10 +8,8 @@ for (const num of arr) {
     console.log("Number:", num);
 }
 
-// -----------------------------------------
-// for...of with Strings (characters iterate karta hai)
-// -----------------------------------------
-
+ // for...of with Strings (characters iterate karta hai)
+ 
 const greetings = "Hello world!";
 console.log("\n--- String ---");
 for (const char of greetings) {
@@ -24,10 +17,8 @@ for (const char of greetings) {
 }
 console.log(); // New line
 
-// -----------------------------------------
-// for...of with Maps
-// -----------------------------------------
-
+ // for...of with Maps
+ 
 const map = new Map();
 map.set("IN", "India");
 map.set("USA", "United States of America");
@@ -41,20 +32,16 @@ for (const [key, value] of map) {
     console.log(`${key} -> ${value}`);
 }
 
-// -----------------------------------------
-// for...of with Sets (ES2015)
-// -----------------------------------------
-
+ // for...of with Sets (ES2015)
+ 
 const uniqueNumbers = new Set([1, 2, 3, 3, 4, 4, 5]);
 console.log("\n--- Set (auto-deduped) ---");
 for (const num of uniqueNumbers) {
     console.log("Unique:", num); // 1, 2, 3, 4, 5
 }
 
-// -----------------------------------------
-// for...of plain Objects pe KAAM NAHI KARTA
-// -----------------------------------------
-
+ // for...of plain Objects pe KAAM NAHI KARTA
+ 
 const myObject = {
     game1: "NFS",
     game2: "Spiderman",
@@ -71,10 +58,8 @@ for (const [key, value] of Object.entries(myObject)) {
     console.log(`${key} -> ${value}`);
 }
 
-// -----------------------------------------
-// Array Destructuring in for...of
-// -----------------------------------------
-
+ // Array Destructuring in for...of
+ 
 console.log("\n--- Destructuring ---");
 const users = [
     { name: "DEEPAK", age: 25 },

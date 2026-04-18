@@ -1,31 +1,23 @@
-// ============================================
-// forEach Method (ES2024+)
-// ============================================
+
 
 const coding = ["js", "ruby", "java", "python", "cpp"];
 
-// -----------------------------------------
-// forEach with Anonymous Function
-// -----------------------------------------
-
+ // forEach with Anonymous Function
+ 
 console.log("--- forEach with function ---");
 coding.forEach(function (val) {
     console.log("Lang:", val);
 });
 
-// -----------------------------------------
-// forEach with Arrow Function (preferred)
-// -----------------------------------------
-
+ // forEach with Arrow Function (preferred)
+ 
 console.log("\n--- forEach with arrow ---");
 coding.forEach((item) => {
     console.log("Language:", item);
 });
 
-// -----------------------------------------
-// forEach with Named Function
-// -----------------------------------------
-
+ // forEach with Named Function
+ 
 function printMe(item) {
     console.log("Printed:", item);
 }
@@ -33,19 +25,15 @@ function printMe(item) {
 console.log("\n--- forEach with named function ---");
 coding.forEach(printMe);
 
-// -----------------------------------------
-// forEach — item, index, aur poori array access karo
-// -----------------------------------------
-
+ // forEach — item, index, aur poori array access karo
+ 
 console.log("\n--- forEach with all parameters ---");
 coding.forEach((item, index, arr) => {
     console.log(`${index}: ${item} (${arr.length} items ki array se)`);
 });
 
-// -----------------------------------------
-// forEach with Array of Objects
-// -----------------------------------------
-
+ // forEach with Array of Objects
+ 
 const myCoding = [
     { languageName: "javascript", languageFileName: "js" },
     { languageName: "java", languageFileName: "java" },
