@@ -1,11 +1,7 @@
-// ============================================
-// Control Flow — if/else (ES2024+)
-// ============================================
 
-// -----------------------------------------
-// Basic if/else
-// -----------------------------------------
 
+ // Basic if/else
+ 
 const temperature = 41;
 
 if (temperature === 40) {
@@ -18,10 +14,8 @@ if (temperature === 40) {
 
 // Comparison operators: <, >, <=, >=, ==, !=, ===, !==
 
-// -----------------------------------------
-// Block Scope in Conditionals
-// -----------------------------------------
-
+ // Block Scope in Conditionals
+ 
 const score = 200;
 
 if (score > 100) {
@@ -30,10 +24,8 @@ if (score > 100) {
 }
 // console.log(power); // ReferenceError — power block ke bahar defined nahi hai
 
-// -----------------------------------------
-// if/else if Chain
-// -----------------------------------------
-
+ // if/else if Chain
+ 
 const balance = 1000;
 
 if (balance < 500) {
@@ -46,10 +38,8 @@ if (balance < 500) {
     console.log("Balance 900 ya usse zyada hai");
 }
 
-// -----------------------------------------
-// Logical Operators
-// -----------------------------------------
-
+ // Logical Operators
+ 
 console.log("\n--- Logical Operators ---");
 const userLoggedIn = true;
 const debitCard = true;
@@ -66,10 +56,8 @@ if (loggedInFromGoogle || loggedInFromEmail) {
     console.log("User logged in hai (OR)");
 }
 
-// -----------------------------------------
-// Optional Chaining in Conditions (ES2020)
-// -----------------------------------------
-
+ // Optional Chaining in Conditions (ES2020)
+ 
 console.log("\n--- Optional Chaining ---");
 const user = {
     name: "DEEPAK",
@@ -84,10 +72,8 @@ if (user.address?.city) {
 // Bina optional chaining ke yeh likhna padta:
 // if (user.address && user.address.city) { ... }
 
-// -----------------------------------------
-// Short-circuit Evaluation (Modern Patterns)
-// -----------------------------------------
-
+ // Short-circuit Evaluation (Modern Patterns)
+ 
 console.log("\n--- Short-circuit Patterns ---");
 
 // AND short-circuit — right side tab hi execute hoga jab left truthy hai
