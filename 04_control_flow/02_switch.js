@@ -1,11 +1,7 @@
-// ============================================
-// Switch Statement aur Alternatives (ES2024+)
-// ============================================
 
-// -----------------------------------------
-// Basic Switch
-// -----------------------------------------
 
+ // Basic Switch
+ 
 const month = "march";
 
 switch (month) {
@@ -26,10 +22,8 @@ switch (month) {
         break;
 }
 
-// -----------------------------------------
-// Grouped Cases (fall-through)
-// -----------------------------------------
-
+ // Grouped Cases (fall-through)
+ 
 const day = "Saturday";
 
 switch (day) {
@@ -48,10 +42,8 @@ switch (day) {
         console.log("\nInvalid day");
 }
 
-// -----------------------------------------
-// Modern Alternative: Object Lookup Pattern
-// -----------------------------------------
-
+ // Modern Alternative: Object Lookup Pattern
+ 
 // Switch ki jagah object use karo cleaner mapping ke liye
 console.log("\n--- Object Lookup Pattern ---");
 
@@ -66,10 +58,8 @@ const monthNames = {
 const result = monthNames[month] ?? "Unknown month";
 console.log("Lookup result:", result); // "March"
 
-// -----------------------------------------
-// Modern Alternative: Map for Complex Keys
-// -----------------------------------------
-
+ // Modern Alternative: Map for Complex Keys
+ 
 const statusMessages = new Map([
     [200, "OK"],
     [301, "Moved Permanently"],

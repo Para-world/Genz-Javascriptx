@@ -1,11 +1,7 @@
-// ============================================
-// Truthy, Falsy aur Modern Operators (ES2024+)
-// ============================================
 
-// -----------------------------------------
-// Truthy aur Falsy Values
-// -----------------------------------------
 
+ // Truthy aur Falsy Values
+ 
 const userEmail = [];
 
 if (userEmail) {
@@ -21,10 +17,8 @@ if (userEmail) {
 // Truthy values (baaki sab, including):
 // "0", "false", " ", [], {}, function(){}
 
-// -----------------------------------------
-// Empty Arrays aur Objects Check Karna
-// -----------------------------------------
-
+ // Empty Arrays aur Objects Check Karna
+ 
 console.log("\n--- Empty Checks ---");
 
 // Empty array check
@@ -38,10 +32,8 @@ if (Object.keys(emptyObj).length === 0) {
     console.log("Object empty hai");
 }
 
-// -----------------------------------------
-// Nullish Coalescing Operator ?? (ES2020)
-// -----------------------------------------
-
+ // Nullish Coalescing Operator ?? (ES2020)
+ 
 console.log("\n--- Nullish Coalescing ---");
 
 // ?? right side SIRF null ya undefined ke liye return karta hai (0, "", false ke liye nahi)
@@ -65,10 +57,8 @@ console.log('"" ?? "default":', val1);   // "" — empty string null/undefined N
 val1 = null ?? undefined ?? 42;
 console.log("null ?? undefined ?? 42:", val1); // 42
 
-// -----------------------------------------
-// Logical Assignment Operators (ES2021)
-// -----------------------------------------
-
+ // Logical Assignment Operators (ES2021)
+ 
 console.log("\n--- Logical Assignment Operators (ES2021) ---");
 
 // ??= (Nullish Assignment) — sirf tab assign karo jab current value null/undefined ho
@@ -90,10 +80,8 @@ let config = { debug: true };
 config.debug &&= false;  // Sirf false set karo agar pehle se truthy tha
 console.log("&&= (was true):", config.debug); // false
 
-// -----------------------------------------
-// Ternary Operator
-// -----------------------------------------
-
+ // Ternary Operator
+ 
 console.log("\n--- Ternary Operator ---");
 
 const iceTeaPrice = 100;

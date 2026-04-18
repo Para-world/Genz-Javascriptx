@@ -1,10 +1,5 @@
-// ============================================
-// Scopes in Modern JavaScript (ES2024+)
-// ============================================
 
-// -----------------------------------------
 // Block Scope (let aur const)
-// -----------------------------------------
 
 let a = 300;
 
@@ -26,9 +21,7 @@ console.log("OUTER a:", a);  // 300 — bahar wala 'a' change nahi hua
  4. Module Scope -> ES Modules me top-level (har file apna module hai)
 */
 
-// -----------------------------------------
 // Nested Function Scopes (Closure)
-// -----------------------------------------
 
 function one() {
     const username = "DEEPAK";
@@ -45,9 +38,7 @@ function one() {
 
 one();
 
-// -----------------------------------------
 // Nested Block Scopes
-// -----------------------------------------
 
 if (true) {
     const username = "DEEPAK";
@@ -60,9 +51,7 @@ if (true) {
 
 // console.log(username); // ReferenceError
 
-// -----------------------------------------
 // Hoisting — Function Declarations vs Expressions
-// -----------------------------------------
 
 console.log("\n--- Hoisting ---");
 

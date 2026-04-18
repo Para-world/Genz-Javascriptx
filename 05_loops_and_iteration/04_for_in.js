@@ -1,11 +1,7 @@
-// ============================================
-// for...in Loop (ES2024+)
-// ============================================
 
-// -----------------------------------------
-// for...in with Objects — Keys iterate karta hai
-// -----------------------------------------
 
+ // for...in with Objects — Keys iterate karta hai
+ 
 const myObject = {
     js: "javascript",
     cpp: "C++",
@@ -18,10 +14,8 @@ for (const key in myObject) {
     console.log(`${key} ka matlab hai ${myObject[key]}`);
 }
 
-// -----------------------------------------
-// for...in with Arrays — INDICES iterate karta hai (values nahi!)
-// -----------------------------------------
-
+ // for...in with Arrays — INDICES iterate karta hai (values nahi!)
+ 
 const programming = ["js", "rb", "py", "java", "cpp"];
 
 console.log("\n--- Array with for...in ---");
@@ -32,20 +26,16 @@ for (const index in programming) {
 // for...in INDEXES iterate karta hai (string ke roop me), values nahi!
 // Array values ke liye for...of use karo.
 
-// -----------------------------------------
-// for...in Maps ke saath KAAM NAHI KARTA
-// -----------------------------------------
-
+ // for...in Maps ke saath KAAM NAHI KARTA
+ 
 // const map = new Map();
 // map.set("IN", "India");
 // for (const key in map) { console.log(key); }
 // Kuch print nahi hoga — Maps for...in se enumerable nahi hain
 // Maps ke saath for...of use karo
 
-// -----------------------------------------
-// for...in vs for...of — Quick Comparison
-// -----------------------------------------
-
+ // for...in vs for...of — Quick Comparison
+ 
 console.log("\n--- for...in vs for...of ---");
 const colors = ["red", "green", "blue"];
 

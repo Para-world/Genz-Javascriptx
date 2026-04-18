@@ -1,6 +1,4 @@
-// ============================================
 // Quick Test — Modern JS Feature Check
-// ============================================
 
 const features = [
     { name: "Optional Chaining", test: () => ({ a: { b: 42 } })?.a?.b === 42 },

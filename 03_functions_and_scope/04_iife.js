@@ -1,6 +1,4 @@
-// ============================================
-// IIFE — Immediately Invoked Function Expressions (ES2024+)
-// ============================================
+
 
 // Named IIFE — turant execute hota hai, global scope pollute nahi karta
 (function chai() {
@@ -12,9 +10,7 @@
     console.log(`DB CONNECTED TWO: ${name}`);
 })("DEEPAK");
 
-// -----------------------------------------
 // Async IIFE — Modern JS me bahut common hai
-// -----------------------------------------
 
 // Top-level await available hone se pehle, yeh THE pattern tha
 // scripts me top level pe async/await use karne ke liye:
@@ -29,9 +25,7 @@
     }
 })();
 
-// -----------------------------------------
 // IIFE for Module Pattern (ES Modules se pehle)
-// -----------------------------------------
 
 const counter = (() => {
     let count = 0; // Private variable — bahar se access nahi ho sakta

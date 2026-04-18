@@ -1,11 +1,7 @@
-// ============================================
-// While aur Do-While Loops (ES2024+)
-// ============================================
 
-// -----------------------------------------
-// While Loop — pehle condition check karta hai, phir execute karta hai
-// -----------------------------------------
 
+ // While Loop — pehle condition check karta hai, phir execute karta hai
+ 
 let index = 0;
 console.log("--- While Loop ---");
 while (index <= 10) {
@@ -13,10 +9,8 @@ while (index <= 10) {
     index += 2; // Modern: index = index + 2 ki jagah += use karo
 }
 
-// -----------------------------------------
-// While Loop with Array
-// -----------------------------------------
-
+ // While Loop with Array
+ 
 const myArray = ["flash", "batman", "superman"];
 
 let i = 0;
@@ -26,10 +20,8 @@ while (i < myArray.length) {
     i++;
 }
 
-// -----------------------------------------
-// Do-While Loop — pehle execute karta hai, phir condition check karta hai
-// -----------------------------------------
-
+ // Do-While Loop — pehle execute karta hai, phir condition check karta hai
+ 
 // Condition shuru se false ho tab bhi body ek baar zarur chalegi!
 
 let score = 11;
@@ -40,10 +32,8 @@ do {
 } while (score <= 10);
 // Output: "Score is 11" — ek baar chala chahe 11 > 10
 
-// -----------------------------------------
-// Practical Example: User Input Simulation
-// -----------------------------------------
-
+ // Practical Example: User Input Simulation
+ 
 console.log("\n--- Practical Do-While ---");
 let attempts = 0;
 let password;

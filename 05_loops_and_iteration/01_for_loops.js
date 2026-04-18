@@ -1,10 +1,6 @@
-// ============================================
-// For Loops in Modern JavaScript (ES2024+)
-// ============================================
 
-// -----------------------------------------
+
 // Basic for Loop
-// -----------------------------------------
 
 for (let i = 0; i <= 10; i++) {
     if (i === 5) {
@@ -12,9 +8,7 @@ for (let i = 0; i <= 10; i++) {
     }
 }
 
-// -----------------------------------------
 // Nested Loops (Multiplication Table)
-// -----------------------------------------
 
 console.log("\n--- Multiplication Table (1-5) ---");
 for (let i = 1; i <= 5; i++) {
@@ -25,20 +19,16 @@ for (let i = 1; i <= 5; i++) {
     console.log(`${i} | ${row}`);
 }
 
-// -----------------------------------------
-// Arrays ko for Loop se iterate karna
-// -----------------------------------------
-
+ // Arrays ko for Loop se iterate karna
+ 
 const myArray = ["flash", "batman", "superman"];
 console.log("\n--- Array iteration ---");
 for (let index = 0; index < myArray.length; index++) {
     console.log(`Hero ${index}: ${myArray[index]}`);
 }
 
-// -----------------------------------------
-// break aur continue
-// -----------------------------------------
-
+ // break aur continue
+ 
 console.log("\n--- break example ---");
 for (let i = 1; i <= 20; i++) {
     if (i === 5) {
@@ -57,10 +47,8 @@ for (let i = 1; i <= 10; i++) {
     console.log(`Value: ${i}`);
 }
 
-// -----------------------------------------
-// Labeled Loops (nested loops se bahar aane ke liye)
-// -----------------------------------------
-
+ // Labeled Loops (nested loops se bahar aane ke liye)
+ 
 console.log("\n--- Labeled Loop ---");
 outerLoop: for (let i = 1; i <= 3; i++) {
     for (let j = 1; j <= 3; j++) {

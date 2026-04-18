@@ -1,10 +1,5 @@
-// ============================================
-// Dates in Modern JavaScript (ES2024+)
-// ============================================
-
-// -----------------------------------------
 // Dates Banana
-// -----------------------------------------
+
 
 const myDate = new Date();
 console.log("toString:", myDate.toString());
@@ -20,17 +15,16 @@ const fromISOString = new Date("2023-01-14");           // ISO format (recommend
 const fromUSFormat = new Date("01-14-2023");            // US format
 console.log("\nISO date:", fromISOString.toLocaleString());
 
-// -----------------------------------------
 // Timestamps
-// -----------------------------------------
+
 
 const myTimeStamp = Date.now(); // Jan 1, 1970 se ab tak milliseconds
 console.log("\nTimestamp (ms):", myTimeStamp);
 console.log("Timestamp (seconds):", Math.floor(Date.now() / 1000)); // Unix timestamp
 
-// -----------------------------------------
+
 // Date Parts Nikalna
-// -----------------------------------------
+
 
 const newDate = new Date();
 console.log("\n--- Date Parts ---");
@@ -40,9 +34,9 @@ console.log("Month (human):", newDate.getMonth() + 1);       // 1-12
 console.log("Day of month:", newDate.getDate());             // 1-31
 console.log("Day of week:", newDate.getDay());               // 0=Sunday, 6=Saturday
 
-// -----------------------------------------
+
 // Intl.DateTimeFormat (Modern Formatting — ES2015+)
-// -----------------------------------------
+
 
 console.log("\n--- Modern Formatting with Intl ---");
 
@@ -68,9 +62,9 @@ const indianFormat = new Intl.DateTimeFormat("en-IN", {
 }).format(newDate);
 console.log("Indian format:", indianFormat);
 
-// -----------------------------------------
+
 // Intl.RelativeTimeFormat (ES2020)
-// -----------------------------------------
+
 
 console.log("\n--- Relative Time ---");
 const rtf = new Intl.RelativeTimeFormat("en", { numeric: "auto" });
@@ -79,9 +73,7 @@ console.log(rtf.format(1, "day"));     // "tomorrow"
 console.log(rtf.format(-3, "hour"));   // "3 hours ago"
 console.log(rtf.format(2, "week"));    // "in 2 weeks"
 
-// -----------------------------------------
 // Date Comparison
-// -----------------------------------------
 
 const startDate = new Date("2024-01-01");
 const endDate = new Date("2024-12-31");
